@@ -2,7 +2,9 @@ const withTranspileModules = require('next-transpile-modules')([
   'react-native-tailwindcss'
 ]);
 
-module.exports = withTranspileModules({
+const withOffline = require('next-offline');
+
+module.exports = withOffline(withTranspileModules({
   webpack: (config) => {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
@@ -16,4 +18,4 @@ module.exports = withTranspileModules({
     ]
     return config
   },
-});
+}));
