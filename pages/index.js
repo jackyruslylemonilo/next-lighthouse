@@ -7,7 +7,7 @@ const Index = () => {
     <View>
       <Text>React Native</Text>
       <Link href="/about">
-          About
+          <a>About</a>
       </Link>
     </View>
   )

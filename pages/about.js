@@ -1,13 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 import { View, Text } from 'react-native';
+import { t } from 'react-native-tailwindcss';
 
 const About = () => {
   return (
-    <View>
+    <View style={[t.itemsCenter, t.justifyCenter]}>
       <Text>About React Native</Text>
       <Link href="/">
-          Home
+          <a>Home</a>
       </Link>
     </View>
   )

@@ -1,4 +1,8 @@
-module.exports = {
+const withTranspileModules = require('next-transpile-modules')([
+  'react-native-tailwindcss'
+]);
+
+module.exports = withTranspileModules({
   webpack: (config) => {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
@@ -12,4 +16,4 @@ module.exports = {
     ]
     return config
   },
-}
+});
