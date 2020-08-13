@@ -2,15 +2,15 @@ import React from 'react';
 import Link from 'next/link';
 import { View, Text } from 'react-native';
 
-const Index = () => {
+const About = () => {
   return (
     <View>
-      <Text>React Native</Text>
-      <Link href="/about">
-          About
+      <Text>About React Native</Text>
+      <Link href="/">
+          Home
       </Link>
     </View>
   )
 }
 
-export default Index;
+export default About;
