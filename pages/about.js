@@ -7,9 +7,9 @@ const About = () => {
   return (
     <View style={[t.itemsCenter, t.justifyCenter]}>
       <Text>About React Native</Text>
-      <Text style={t.textGreen500}>Text green</Text>
-      <Text style={t.textYellow300}>Text yellow</Text>
-      <Text style={t.textPurple100}>Text purple</Text>
+      <Text style={[t.textGreen, t.text35]}>Text green</Text>
+      <Text style={t.secondaryDarkGray}>Text yellow</Text>
+      <Text style={t.textOrange}>Text purple</Text>
       <Link href="/">
           <a>Home</a>
       </Link>
