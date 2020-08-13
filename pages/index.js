@@ -1,8 +1,11 @@
 import React from 'react';
+import { View, Text } from 'react-native';
 
 const Index = () => {
   return (
-    <div>Hello World</div>
+    <View>
+      <Text>React Native</Text>
+    </View>
   )
 }
 
